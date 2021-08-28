@@ -1,0 +1,10 @@
+.nav ul{
+    background-color: rgb(23, 126, 216);
+    display:Flex;
+    border: 1px solid red;
+    justify-content: row;
+}
+.nav ul li{
+padding : 5px;
+list-style: none;
+}

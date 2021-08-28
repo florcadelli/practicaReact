@@ -1,0 +1,11 @@
+.tira-de-peliculas{
+    background-color: green;
+    width:50%;
+    margin:auto;
+}
+.pelicula{
+    color :violet;
+}
+.pelicula ul li {
+    list-style: none;
+}
