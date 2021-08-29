@@ -9,7 +9,7 @@ function TiraPeliculas(props) {
       
         {props.info.map((pelicula, i) => (
           <Pelicula
-            key={pelicula + 1}
+            key={pelicula.titulo + 1}
             titulo={pelicula.titulo}
             rating={pelicula.rating}
             generos={pelicula.generos}

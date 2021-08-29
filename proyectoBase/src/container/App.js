@@ -1,7 +1,7 @@
 import "../styles/App.css";
 import TiraPeliculas from "../components/TiraPeliculas";
 import NavBar from "../components/NavBar";
-import Boton from "../components/Boton";
+import Contador from "../components/Contador";
 import React, { Component } from 'react'
 
 //fuera del componente de clase
@@ -33,22 +33,22 @@ let peliculas1 = [
 let peliculas2 = [
   {
     titulo: "Pelicula5",
-    rating: "8.0",
+    rating: "1.0",
     generos: ["drama", "accion"]
   },
   {
     titulo: "Pelicula6",
-    rating: "7.0",
+    rating: "2.0",
     generos: ["comedia", "accion"]
   },
   {
     titulo: "Pelicula7",
-    rating: "6.0",
+    rating: "3.0",
     generos: ["terror"]
   },
   {
     titulo: "Pelicula8",
-    rating: "5.0",
+    rating: "4.0",
     generos: ["terror"]
   }
 ]
@@ -83,6 +83,8 @@ render() {
              <TiraPeliculas  info = {this.state.peliculas}/>
              <button onClick={ ()=> this.cambiarPeliculas()}> Cambiar Peliculas</button>
              </main>
+
+            <Contador inicial = {0} />
              <footer><p>{textoFooter}</p></footer> 
          </div>
       )
