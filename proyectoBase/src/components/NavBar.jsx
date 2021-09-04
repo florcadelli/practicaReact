@@ -1,5 +1,5 @@
  import "../styles/nav.css";
-import propTypes from "prop-types";
+// import propTypes from "prop-types";
 
 function NavBar(props) {
   return (

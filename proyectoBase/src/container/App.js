@@ -2,10 +2,14 @@ import "../styles/App.css";
 import TiraPeliculas from "../components/TiraPeliculas";
 import NavBar from "../components/NavBar";
 import Contador from "../components/Contador";
+import Pizzeria from "../components/Pizzeria";
+import Formulario from "../components/Formulario";
+import Rejuvenecedor from "../components/Rejuvenecedor";
+
 import React, { Component } from 'react'
 
 //fuera del componente de clase
-let textoHeader = "Soy el header";
+
 let enlaces = ["home", "Productos", "Servicios", "Sucursales", "Contacto"]
 let textoFooter = "Soy el footer";
 let peliculas1 = [
@@ -63,7 +67,7 @@ class App extends Component {
   }
 
 cambiarPeliculas() {
-  if(this.state.peliculas == peliculas1){
+  if(this.state.peliculas === peliculas1){
     this.setState ({peliculas : peliculas2})
   }else{
     this.setState ({peliculas : peliculas1})
@@ -85,6 +89,16 @@ render() {
              </main>
 
             <Contador inicial = {0} />
+             
+             <p>=================================</p>
+             <Pizzeria/>
+             <p>=================================</p>
+             
+             <Formulario/>
+             <p>=================================</p>
+
+             <Rejuvenecedor/>
+             <p>=================================</p>
              <footer><p>{textoFooter}</p></footer> 
          </div>
       )

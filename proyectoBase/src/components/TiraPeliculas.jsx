@@ -1,7 +1,5 @@
 import Pelicula from "./Pelicula";
 import "../styles/peliculas.css";
-import React, { Component } from "react"
-
 
 function TiraPeliculas(props) {
   return (
